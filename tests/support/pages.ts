@@ -45,7 +45,12 @@ export class Shop {
   }
 
   // ---- cart / checkout ----
-  async openCart() { await this.page.getByTestId('shopping-cart-link').click(); }
+  async openCart() {
+    await this.page.getByTestId('shopping-cart-link').click();
+    // SPA route change: wait for the cart to render, or assertions can hit the old page's DOM
+    await expect(this.page).toHaveURL(/cart\.html/);
+    await expect(this.page.getByTestId('cart-list')).toBeVisible();
+  }
   async fillInfo(first: string, last: string, zip: string) {
     await this.page.getByTestId('firstName').fill(first);
     await this.page.getByTestId('lastName').fill(last);
