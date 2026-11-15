@@ -1,0 +1,26 @@
+{
+  "name": "saucedemo-qa",
+  "version": "1.0.0",
+  "description": "Automated + AI-assisted QA of saucedemo.com (Playwright)",
+  "scripts": {
+    "test": "playwright test",
+    "test:bugs": "cross-env SHOW_BUGS=1 playwright test --retries=0",
+    "report": "playwright show-report",
+    "explore": "tsx scripts/explore.ts && tsx scripts/explore-edges.ts",
+    "ux:screens": "tsx scripts/ux-screenshots.ts"
+  },
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^26.6.6",
+    "cross-env": "^10.1.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  }
+}
