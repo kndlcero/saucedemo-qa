@@ -7,7 +7,7 @@ on:
     - cron: '0 6 * * 1' # weekly: notice if Sauce Labs changes/fixes the demo users
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04 # pinned: Playwright 1.56 has no deps for ubuntu-latest (26.04)
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
