@@ -1,5 +1,7 @@
 # saucedemo-qa
 
+[![playwright](https://github.com/kndlcero/saucedemo-qa/actions/workflows/playwright.yml/badge.svg)](https://github.com/kndlcero/saucedemo-qa/actions/workflows/playwright.yml)
+
 Automated, AI-assisted QA of [saucedemo.com](https://www.saucedemo.com), the public Swag Labs practice shop. This project is not affiliated with Sauce Labs.
 
 - **[REPORT.md](REPORT.md):** the one-page report (bugs, UX, approach, how AI was used)
