@@ -2,11 +2,10 @@
 
 [![playwright](https://github.com/kndlcero/saucedemo-qa/actions/workflows/playwright.yml/badge.svg)](https://github.com/kndlcero/saucedemo-qa/actions/workflows/playwright.yml)
 
-Automated, AI-assisted QA of [saucedemo.com](https://www.saucedemo.com), the public Swag Labs practice shop. This project is not affiliated with Sauce Labs.
+Automated, AI-assisted QA of [saucedemo.com](https://www.saucedemo.com).
 
 - **[REPORT.md](REPORT.md):** the one-page report (bugs, UX, approach, how AI was used)
 - **[docs/UX-REVIEW.md](docs/UX-REVIEW.md):** the top 5 UX issues, with annotated screenshots and fixes
-- **[docs/WALKTHROUGH.md](docs/WALKTHROUGH.md):** a 3-minute demo script
 
 ## Run it
 
